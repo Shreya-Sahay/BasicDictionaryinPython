@@ -2,9 +2,9 @@ import json
 import difflib
 from difflib import get_close_matches
 
-with open("E:/courses/courses from udemy/the python mega courses_build 10 real world application/Application_onedictionary/content.json","r+") as f:
+with open("content.json","r+") as f:
     data = json.load(f)
-#excontent= json.load(open("E:/courses/courses from udemy/the python mega courses_build 10 real world application/Application_onedictionary/content.json",encoding='utf-8'))
+#excontent= json.load(open("content.json",encoding='utf-8'))
 def translate_word(wo):
     word = wo.lower()
     if word in data:
